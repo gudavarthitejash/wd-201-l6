@@ -9,14 +9,18 @@
 </head>
 <body>
     <%- include('header.ejs') %> 
-    <table>
+    <table border="2px">
         <% for(var i=0;i<alltodo.length;i++){%>
             <tr>
                 <td>
                     <%= alltodo[i].title %>
                 </td>
+                <td>
+                    <%= alltodo[i].dueDate %>
+                </td>
             </tr>
        <% } %>
     </table>
+    <%- include('footer.ejs') %>
 </body>
 </html>
